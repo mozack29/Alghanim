@@ -14,6 +14,8 @@ model-viewer {
   height: 600px;
 }
 </style>
+
+<!--
 <model-viewer bounds="tight" enable-pan src="https://mozack29.github.io/Alghanim/90035662.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls environment-image="neutral" poster="poster.webp" shadow-intensity="1">
     <div class="progress-bar hide" slot="progress-bar">
         <div class="update-bar"></div>
@@ -27,9 +29,23 @@ model-viewer {
   </button>
    
 </model-viewer>
+-->
 
+<model-viewer 
+seamless-poster shadow-intensity="1"
+data-name="sample model"
+ar
+background-color="#ffffff"
+ar-modes="scene-viewer quick-look"
+src="https://mozack29.github.io/Alghanim/90035662.glb" 
+ios-src="https://mozack29.github.io/Alghanim/90035662.usdz"
+alt="A 3D model" auto-rotate camera-controls>
+</model-viewer>
+
+<!--
 <p>this is done for iOS</p>
 <model-viewer camera-controls alt="A 3D model of an astronaut" ar ios-src="90035662.usdz">
+-->
 </model-viewer>
 </body>
 </html>
